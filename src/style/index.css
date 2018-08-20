@@ -1,0 +1,23 @@
+body{
+    background-color: aliceblue;
+    background-image: url("../../static/image/li914.jpg");
+
+}
+h4{
+    text-align: center;
+    color: aqua;
+}
+p{
+    text-align: right;
+    color: red;
+}
+#test02{
+    text-align: left;
+    color: blue;
+    font-size: 18px;
+}
+.test03{
+    text-align: center;
+    color: chartreuse;
+    font-size: 22px;
+}
