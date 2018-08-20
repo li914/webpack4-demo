@@ -3,4 +3,5 @@
  * */
 import './style/index.css';
 import demo from './js/demo';
+import test from './js/test'
 console.log('index.js');
