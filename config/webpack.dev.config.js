@@ -42,7 +42,11 @@ module.exports=Merge(BaseWebpackConfig,{
         ]
     },
     devServer: {
-        contentBase:path.resolve(__dirname,'../dist/index.html'),
+        // contentBase:path.resolve(__dirname,'../dist/index.html'),
+        /**
+         * 把当前项目根目录作为本地服务器的根目录
+         * */
+        contentBase:'./',
         host:'localhost',
         port:8000,
         open:true,
@@ -56,7 +60,7 @@ module.exports=Merge(BaseWebpackConfig,{
         }),
         new Webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
-            template:path.resolve(__dirname,'../index.html'),
+            template:path.resolve(__dirname,'../src/index.html'),
             filename: 'index.html',
             title:'Webpack4 配置 Demo',
             hash:true,
