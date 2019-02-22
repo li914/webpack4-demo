@@ -1,7 +1,8 @@
-/**
- * webpack 项目的人口文件
- * */
-import './style/index.css';
-import demo from './js/demo';
-import test from './js/test'
-console.log('index.js');
+import '@/css/style';
+import '@/css/less';
+import '@/css/scss';
+// import util from '@/js/util';
+require('@/js/util');
+
+console.error("55555");
+console.log("webpack4的一些基础配置");
