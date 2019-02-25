@@ -10,7 +10,7 @@ const Comm = require('./webpack.comm.js');
 
 //获取文件夹的绝对路径
 function resolve(dir) {
-    return path.resolve(__dirname, '..', dir) + '/';
+    return path.resolve(__dirname, '../', dir);
 }
 
 const Prod = {
@@ -74,10 +74,6 @@ const Prod = {
                 },
             },
             cache: true,
-        }),
-        new CleanWebpackPlugin(resolve('dist'),{
-            //配置项目根目录路径
-            root: resolve('/')
         })
     ],
     optimization: {

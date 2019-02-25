@@ -10,13 +10,13 @@ const Comm = require('./webpack.comm.js');
 
 //获取文件夹的绝对路径
 function resolve(dir) {
-    return path.resolve(__dirname, '..', dir) + '/';
+    return path.resolve(__dirname, '../', dir);
 }
 
 const Dev = {
     mode: 'development',
     output: {
-        filename: "index.js",
+        filename: "build.js",
         path: resolve('dist')
     },
     //显示JavaScript错误位置（在源文件中的位置）
@@ -65,10 +65,6 @@ const Dev = {
         new MiniCssExtractPlugin({
             filename: '[name].css', // 设置最终输出的文件名
             chunkFilename: '[id].css'
-        }),
-        new CleanWebpackPlugin(resolve('dist'),{
-            //配置项目根目录路径
-            root: resolve('/')
         })
     ],
     optimization: {

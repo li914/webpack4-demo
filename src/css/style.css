@@ -1,4 +1,6 @@
 .content{
+    background: url("../../asset/images/li914.jpg") no-repeat;
+    background-size: 150px;
     width: 1200px;
     height: 720px;
     font-size: 24px;
@@ -11,4 +13,9 @@
     text-align: center;
     line-height: 40px;
     color: white;
+}
+.content img{
+    display: block;
+    margin: 0px auto;
+    width: 120px;
 }
